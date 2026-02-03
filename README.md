@@ -1,15 +1,26 @@
 # zerriemack.github.io
 
-This is my personal site for projects, course work, and curated sources. It is built with HTML and CSS and published with GitHub Pages.
+Personal site for projects, course work, and curated sources. Built with HTML and CSS and published through GitHub Pages.
 
-Live site: https://zerriemack.github.io
+## Live site
+https://zerriemack.github.io
 
-## Files
-index.html
-style.css
-README.md
+## What this repository contains
+- `index.html` Site structure and content
+- `style.css` Site styling
+- `resume.pdf` Resume download
 
-## Update steps
-1. Edit index.html or style.css
-2. Commit changes in GitHub Desktop with a clear summary
-3. Push to GitHub
+## Key links
+- Milly Map Sources (site): https://zerriemack.github.io/milly-map-sources/
+- Milly Map Sources (repo): https://github.com/Zerriemack/milly-map-sources
+- CMPA Notes (repo): https://github.com/Zerriemack/CMPA-Notes
+- Teamwork Online: https://www.teamworkonline.com/business_cards/06d554866f6521c2
+- Instagram: https://www.instagram.com/Zerriemack/
+
+## How to update the site
+1. Edit `index.html` or `style.css`
+2. Commit and push changes to `main`
+3. Refresh the live site after a minute
+
+## License
+All rights reserved.
