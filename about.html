@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Zerrie Mack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#sources">Sources</a>
+        <a href="index.html#notes">Notes</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>About</h1>
+
+      <p>
+        This site is my personal hub for projects, course work, and curated sources. I built it to keep everything
+        organized in one place so instructors, recruiters, and visitors can quickly find what I am working on without
+        digging through multiple repositories.
+      </p>
+
+      <h2>How I use this hub</h2>
+      <p>
+        The Projects section is the main entry point. It includes links to my active builds and portfolio work, including
+        Milly Maker Tracker, which is a website project focused on organizing DraftKings Milly Maker contest winners and
+        lineup data for research and analysis.
+      </p>
+
+      <p>
+        I keep Sources and Notes separate so it is easy to find curated references and coursework material without
+        mixing them into my project links.
+      </p>
+
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="https://millymakertracker.com/" target="_blank" rel="noopener">Milly Maker Tracker</a></li>
+        <li><a href="https://zerriemack.github.io/milly-map-sources/" target="_blank" rel="noopener">Milly Map Sources</a></li>
+        <li><a href="https://zerriemack.github.io/CMPA-Notes/" target="_blank" rel="noopener">CMPA Notes</a></li>
+        <li><a href="resume.pdf">Resume (PDF)</a></li>
+      </ul>
+
+      <p>
+        <a href="index.html">Back to Home</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Zerrie Mack</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
