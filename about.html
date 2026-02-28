@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,56 +9,69 @@
 
   <body>
     <header class="site-header">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#sources">Sources</a>
-        <a href="index.html#notes">Notes</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+      <div class="topbar container">
+        <a class="logo" href="index.html">ZERRIE MACK</a>
+        <nav class="toplinks" aria-label="Top links">
+          <a href="index.html#links">Links</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="navwrap">
+        <nav class="mainnav container" aria-label="Primary navigation">
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#sources">Sources</a>
+          <a href="index.html#notes">Notes</a>
+          <a href="about.html" aria-current="page">About Page</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-      <h1>About</h1>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title">About</h1>
 
-      <p>
-        This site is my personal hub for projects, course work, and curated sources. I built it to keep everything
-        organized in one place so instructors, recruiters, and visitors can quickly find what I am working on without
-        digging through multiple repositories.
-      </p>
+          <p class="section-text">
+            This site is my professional hub for projects, course work, and curated sources. I built it so visitors can
+            find my work fast without digging through multiple repositories.
+          </p>
 
-      <h2>How I use this hub</h2>
-      <p>
-        The Projects section is the main entry point. It includes links to my active builds and portfolio work, including
-        Milly Maker Tracker, which is a website project focused on organizing DraftKings Milly Maker contest winners and
-        lineup data for research and analysis.
-      </p>
+          <p class="section-text">
+            The hub stays focused on organization and navigation. When a project already has its own full site, I link
+            out to it instead of rebuilding it here. Milly Maker Tracker is one of the main examples and lives at
+            <a class="inline-link" href="https://millymakertracker.com/" target="_blank" rel="noopener">millymakertracker.com</a>.
+          </p>
 
-      <p>
-        I keep Sources and Notes separate so it is easy to find curated references and coursework material without
-        mixing them into my project links.
-      </p>
+          <h2 class="section-title">What you will find here</h2>
+          <ul class="bullets">
+            <li>Projects with short descriptions and working links</li>
+            <li>Curated sources for DFS research and coursework</li>
+            <li>Course notes organized for quick access</li>
+            <li>Resume and contact links in one place</li>
+          </ul>
 
-      <h2>Quick links</h2>
-      <ul>
-        <li><a href="https://millymakertracker.com/" target="_blank" rel="noopener">Milly Maker Tracker</a></li>
-        <li><a href="https://zerriemack.github.io/milly-map-sources/" target="_blank" rel="noopener">Milly Map Sources</a></li>
-        <li><a href="https://zerriemack.github.io/CMPA-Notes/" target="_blank" rel="noopener">CMPA Notes</a></li>
-        <li><a href="resume.pdf">Resume (PDF)</a></li>
-      </ul>
+          <h2 class="section-title" style="margin-top: 28px;">Quick links</h2>
+          <div class="linklist">
+            <a class="linkpill" href="https://millymakertracker.com/" target="_blank" rel="noopener">Milly Maker Tracker</a>
+            <a class="linkpill" href="https://zerriemack.github.io/milly-map-sources/" target="_blank" rel="noopener">Milly Map Sources</a>
+            <a class="linkpill" href="https://zerriemack.github.io/CMPA-Notes/" target="_blank" rel="noopener">CMPA Notes (site)</a>
+            <a class="linkpill" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="linkpill" href="https://www.teamworkonline.com/business_cards/06d554866f6521c2" target="_blank" rel="noopener">TeamWork Online</a>
+          </div>
 
-      <p>
-        <a href="index.html">Back to Home</a>
-      </p>
+          <p class="section-text" style="margin-top: 18px;">
+            <a class="inline-link" href="index.html">Back to Home</a>
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Zerrie Mack</p>
+      <div class="container footer-inner">
+        <p>© 2026 Zerrie Mack</p>
+      </div>
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
