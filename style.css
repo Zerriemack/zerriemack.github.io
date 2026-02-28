@@ -21,38 +21,9 @@ a {
   text-decoration: none;
 }
 
-a:focus-visible {
-  outline: 2px solid #111;
-  outline-offset: 3px;
-}
-
 .container {
   width: min(1100px, calc(100% - 48px));
   margin: 0 auto;
-}
-
-/* Accessibility */
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip-link:focus {
-  left: 16px;
-  top: 16px;
-  width: auto;
-  height: auto;
-  padding: 10px 12px;
-  border: 1px solid #e6e6e6;
-  background: #fff;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  z-index: 9999;
 }
 
 /* Header */
@@ -160,18 +131,6 @@ a:focus-visible {
   margin-top: 12px;
 }
 
-/* Lists */
-.bullets {
-  margin: 14px 0 0;
-  padding-left: 20px;
-  max-width: 66ch;
-  opacity: 0.9;
-}
-
-.bullets li {
-  margin: 8px 0;
-}
-
 /* Grid */
 .grid {
   display: grid;
@@ -213,8 +172,7 @@ a:focus-visible {
   opacity: 0.9;
 }
 
-.card-link:hover,
-.card-link:focus-visible {
+.card-link:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -236,8 +194,7 @@ a:focus-visible {
   background: #fff;
 }
 
-.linkpill:hover,
-.linkpill:focus-visible {
+.linkpill:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -248,14 +205,21 @@ a:focus-visible {
   text-underline-offset: 3px;
 }
 
-.inline-link:hover,
-.inline-link:focus-visible {
-  text-decoration-thickness: 2px;
-}
-
 /* Contact spacing */
 .contact-links {
   margin-top: 16px;
+}
+
+/* About page helpers */
+.bullets {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  max-width: 66ch;
+  opacity: 0.85;
+}
+
+.bullets li {
+  margin: 8px 0;
 }
 
 /* Footer */
